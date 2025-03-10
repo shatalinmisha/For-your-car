@@ -1,0 +1,75 @@
+.achievements {
+  margin: 0 0 80px;
+
+  &__title {
+    margin: 0 0 40px;
+    font-family: $ff-Parat;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list {
+    margin: 0 0 40px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__item {
+    width: 350px;
+    padding: 20px 30px 40px;
+    border-left: 2px solid $color-bokara-grey;
+    border-radius: 0 60px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 0 15px;
+  }
+
+  &__number {
+    margin: 0 0 5px;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 70px;
+    color: $color-achievements;
+  }
+
+  &__note {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-achievements;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0 60px 0;
+  }
+}

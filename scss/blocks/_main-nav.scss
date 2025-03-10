@@ -1,0 +1,70 @@
+.main-nav {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  
+    @include vp-1023 {
+      display: none;
+    }
+  
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 51px;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  
+      @media (max-width: 1280px) {
+        gap: 10px 30px;
+      }
+    }
+  
+    &__link {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+      border-bottom: 2px solid transparent;
+      text-transform: uppercase;
+      
+  
+      &:hover,
+      &:focus-visible {
+        border-bottom: 2px solid $color-bokara-grey;
+      }
+    }
+  
+    &__burger-phone-link {
+      gap: 5px;
+      cursor: pointer;
+      user-select: none;
+      color: $color-phone-burger;
+      display: none;
+  
+      &:hover,
+      &:focus {
+        color: $color-bokara-grey;
+      }
+    }
+  
+    &__icon-phone {
+      width: 20px;
+      height: 20px;
+    }
+  
+    &__user-phone {
+      @include vp-1023 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+  
+      @include vp-767 {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+      }
+    }
+  }
+  

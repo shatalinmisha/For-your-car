@@ -1,0 +1,121 @@
+.reviews {
+  margin: 0 0 80px;
+
+  //   @include vp-1023 {
+  //     margin: 0 0 60px;
+  //   }
+
+  //   @include vp-767 {
+  //     margin: 0 0 50px;
+  //   }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__title {
+    font-family: $ff-Parat;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.04em;
+    margin: 0 0 20px;
+
+    // @include vp-1023 {
+    //   font-size: 36px;
+    //   font-weight: 400;
+    //   line-height: 40px;
+    //   letter-spacing: -0.04em;
+    //   text-align: center;
+    //   margin: 0 0 30px;
+    // }
+
+    // @include vp-767 {
+    //   font-size: 26px;
+    //   font-weight: 400;
+    //   line-height: 32px;
+    //   letter-spacing: -0.04em;
+    //   margin: 0 0 20px;
+    // }
+  }
+
+  &__btn-link {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 202px;
+    padding: 16px;
+    text-align: center;
+    background-color: transparent;
+    color: $color-bokara-grey;
+    border: 1px solid $color-bokara-grey;
+    border-radius: 18px;
+    user-select: none;
+    cursor: pointer;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 42px;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-white;
+      background-color: $color-bokara-grey;
+    }
+  }
+
+  &__list {
+    margin: 0 -30px;
+    padding: 30px 30px 80px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    gap: 24px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+    box-shadow: 10px 28px 26px 11px rgba(0, 0, 0, 0.2);
+    background-color: $color-reviews;
+    width: 500px;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &__card-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 30px;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 0 5px;
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-bokara-grey-60;
+    margin: 0 0 20px;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 22px;
+  }
+}

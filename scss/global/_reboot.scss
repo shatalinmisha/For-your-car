@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: $ff-Noto-sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: $color-bokara-grey;
+  background-color: $color-white;
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  color: $color-bokara-grey;
+  text-decoration: none;
+}

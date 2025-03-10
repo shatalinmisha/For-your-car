@@ -1,0 +1,37 @@
+.advantage {
+    display: flex;
+    flex-direction: column;
+
+  &__title {
+    margin: 0 0 20px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    color: $color-achievements;
+  }
+
+  &__text {
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  &__text-coment {
+    margin: 0 0 50px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: $color-highlight;
+  }
+
+  &__link {
+    width: 200px;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+    border: 2px solid $color-achievements;
+    border-radius: 8px;
+    text-transform: uppercase;
+  }
+}

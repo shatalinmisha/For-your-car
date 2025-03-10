@@ -1,0 +1,82 @@
+.footer {
+  margin: 0;
+  padding: 48px 0;
+  background-color: $color-bokara-grey;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 253px 1fr;
+  }
+
+  &__logo-link {
+    display: flex;
+    align-items: center;
+    margin: 0 50px 0 0;
+    color: $color-white;
+  }
+
+  &__logo-icon {
+    align-self: flex-start;
+    border-radius: 6px;
+    flex-shrink: 0;
+    height: 42px;
+    width: 121px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+  }
+
+  &__inner-phone {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    color: $color-white;
+  }
+
+  &__inner-time {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-white-50;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+  }
+
+  &__user-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid $color-white;
+    color: $color-white;
+
+    &--avito {
+      padding: 10px 4px;
+    }
+  }
+
+  &__user-icon {
+    width: 24px;
+    height: 24px;
+
+    &--avito {
+      width: 40px;
+      height: 24px;
+    }
+  }
+}
