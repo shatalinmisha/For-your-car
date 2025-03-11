@@ -21,13 +21,10 @@
                 <nav class="main-nav">
                     <ul class="main-nav__list">
                         <li class="main-nav__item">
-                            <a class="main-nav__link" href="#">Описание</a>
+                            <a class="main-nav__link" href="#">Важно</a>
                         </li>
                         <li class="main-nav__item">
                             <a class="main-nav__link" href="#">Полезно</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a class="main-nav__link" href="#">Блог</a>
                         </li>
                         <li class="main-nav__item">
                             <a class="main-nav__link" href="#">Отзывы</a>
@@ -36,13 +33,63 @@
                             <a class="main-nav__link" href="#">Контакты</a>
                         </li>
                     </ul>
-                    <a class="main-nav__burger-phone-link" href="tel:+78000000000">
-                        <svg class="main-nav__icon-phone" width="24" height="24" aria-hidden="true">
+                </nav>
+                <button class="header__burger" aria-label="Переключаетель меню">
+                    <span class="header__burger-menu"></span>
+                </button>
+
+                <!-- Меню бургер -->
+
+                <nav class="main-nav-burger">
+                    <ul class="main-nav-burger__list">
+                        <li class="main-nav-burger__item">
+                            <a class="main-nav-burger__link" href="#">Важно</a>
+                        </li>
+                        <li class="main-nav-burger__item">
+                            <a class="main-nav-burger__link" href="#">Полезно</a>
+                        </li>
+                        <li class="main-nav-burger__item">
+                            <a class="main-nav-burger__link" href="#">Отзывы</a>
+                        </li>
+                        <li class="main-nav-burger__item">
+                            <a class="main-nav-burger__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="main-nav-burger__messenger-list">
+                        <li class="main-nav-burger__messenger-item">
+                            <a class="main-nav-burger__messenger-link main-nav-burger__messenger-link--avito"
+                                href="https://www.avito.ru/sankt-peterburg/zapchasti_i_aksessuary/evro_podrulevye_niva_2121_vaz_2101-07_3158356258?utm_campaign=native&utm_medium=item_page_android&utm_source=soc_sharing_seller"
+                                target="_blank" aria-label="Ссылка на Avito">
+                                <svg class="main-nav-burger__messenger-icon main-nav-burger__messenger-icon--avito" width="40" height="24"
+                                    aria-hidden="true">
+                                    <use xlink:href="images/svg/sprite.svg#icon-avito"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="main-nav-burger__messenger-item">
+                            <a class="main-nav-burger__messenger-link" href="#" aria-label="Ссылка на whatsapp">
+                                <svg class="main-nav-burger__messenger-icon" width="24" height="24" aria-hidden="true">
+                                    <use xlink:href="images/svg/sprite.svg#icon-wa"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="main-nav-burger__messenger-item">
+                            <a class="main-nav-burger__messenger-link" href="#" aria-label="Ссылка на Telegram">
+                                <svg class="main-nav-burger__messenger-icon" width="24" height="24" aria-hidden="true">
+                                    <use xlink:href="images/svg/sprite.svg#icon-tg"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="main-nav-burger__burger-phone-link" href="tel:+78000000000">
+                        <svg class="main-nav-burger__icon-phone" width="24" height="24" aria-hidden="true">
                             <use xlink:href="images/svg/sprite.svg#icon-phone"></use>
                         </svg>
-                        <span class="main-nav__user-phone">8 (800) 000-00-00</span>
+                        <span class="main-nav-burger__user-phone">8 (800) 000-00-00</span>
                     </a>
                 </nav>
+
+                <!-- Основное меню -->
                 <ul class="header__user-list">
                     <li class="header__user-item">
                         <a class="header__user-link header__user-link--avito"
@@ -54,20 +101,21 @@
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="header__user-item">
                         <a class="header__user-link" href="#" aria-label="Ссылка на whatsapp">
                             <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
                                 <use xlink:href="images/svg/sprite.svg#icon-wa"></use>
                             </svg>
                         </a>
                     </li>
-                    <li><a class="header__user-link" href="#" aria-label="Ссылка на Telegram">
+                    <li class="header__user-item">
+                        <a class="header__user-link" href="#" aria-label="Ссылка на Telegram">
                             <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
                                 <use xlink:href="images/svg/sprite.svg#icon-tg"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="header__user-item">
                         <a class="header__user-link" href="tel:88000000000" aria-label="Ссылка на телефон">
                             <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
                                 <use xlink:href="images/svg/sprite.svg#icon-phone"></use>
@@ -78,7 +126,7 @@
             </div>
         </div>
     </header>
-    <main>
+     <main>
         <section class="hero">
             <img class="hero__banner-img" src="images/hero-banner.png" alt="Фотография автомобиля Нива 2121 Бронто">
             <h1 class="visually-hidden">Евро Подрулевые для Нива 2121 и ВАЗ 2101-07 – Купить и Установить в
@@ -90,6 +138,11 @@
                         <p class="hero__title-text">Комфорт и Надежность</p>
                         <p class="hero__title-text">Нива 2121 и ВАЗ 2101-07</p>
                     </div>
+                    <video class="hero__video-mob" width="400" height="400" preload="auto" autoplay loop muted
+                    playsinline>
+                    <source src="images/video/video2121-5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
                     <button class="hero__btn" type="button">Связаться</button>
                     <div class="hero__info">
                         <img class="hero__info-img" src="images/img/name-organizer.png" width="250" height="250"
@@ -131,9 +184,9 @@
                 </div>
             </div>
         </section>
-        <section class="achievements">
+         <section class="achievements">
             <div class="container">
-                <h1 class="achievements__title">Мои результаты</h1>
+                <h2 class="achievements__title">Важно знать</h2>
                 <div class="achievements__wrapper">
                     <div class="achievements__inner">
                         <ul class="achievements__list">
@@ -156,9 +209,11 @@
                                     и&nbsp;качественными
                                     аналогами</p>
                             </li>
-                        </ul>
-                        <img class="achievements__img" src="images/img/achievements-image.jpeg" height="736"
+                            <li class="achievements__item achievements__item--img">
+                                <img class="achievements__img" src="images/img/achievements-image.jpeg" height="736"
                             width="1312" alt="Картинка автозапчасти">
+                            </li>
+                        </ul>
                     </div>
                     <div class="advantage">
                         <h2 class="advantage__title">For your car - евро подрулевые</h2>
@@ -195,16 +250,16 @@
                 <ul class="useful__list">
                     <li class="useful__item">
                         <h3 class="useful__subtitle">Возможности</h3>
-                        <p class="useful__text">-Установка на&nbsp;штатный рулевой вал. Рулевое колесо при этом остаётся
+                        <p class="useful__text">Установка на&nbsp;штатный рулевой вал. Рулевое колесо при этом остаётся
                             штатным.
-                            -Возможность перенести на&nbsp;подрулевой переключатель функцию заднего стеклоочистителя
+                            - Возможность перенести на&nbsp;подрулевой переключатель функцию заднего стеклоочистителя
                             и&nbsp;бачка омывателя. Например, для автомобилей ВАЗ-2104 или &laquo;Нива&raquo; 2121, 2131
-                            -Дополнительный канал для магнитолы. Он&nbsp;работает при введённом в&nbsp;замок ключе, без
+                            - Дополнительный канал для магнитолы. Он&nbsp;работает при введённом в&nbsp;замок ключе, без
                             питания
                             на&nbsp;приборную панель.
-                            -Блокировка от&nbsp;повторного проворота стартера.
-                            -Дальний/ближний свет и&nbsp;поворотники на&nbsp;одном переключателе.
-                            -Полный комплект, со&nbsp;всем необходимым, для самостоятельной установки, вместо штатной
+                            - Блокировка от&nbsp;повторного проворота стартера.
+                            - Дальний/ближний свет и&nbsp;поворотники на&nbsp;одном переключателе.
+                            - Полный комплект, со&nbsp;всем необходимым, для самостоятельной установки, вместо штатной
                             подрулевой
                             &laquo;скорлупы&raquo;! &mdash;&nbsp;Лада калина 1&nbsp;или Гранта&nbsp;2!</p>
                     </li>
@@ -406,10 +461,10 @@
         </section>
         <section class="contact">
             <div class="container container--lateral">
+                <h2 class="contact__title">Контакты</h2>
                 <div class="contact__wrapper">
-                    <img class="contact__img" src="images/img/contact-img2.jpg" width="500" height="300"
+                    <img class="contact__img" src="images/img/contact-img2.png" width="500" height="300"
                         alt="Креативная картинка с автомобилями">
-                    <div class="contact__info">
                         <ul class="contact__list">
                             <li class="contact__item">
                                 <h4 class="contact__subtitle">Автомобилистам</h4>
@@ -448,13 +503,12 @@
                                 <span class="contact__time">с 10:00 до 22:00</span>
                             </li>
                         </ul>
-                    </div>
                 </div>
                 <script type="text/javascript" charset="utf-8" async
                     src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab05d8b960415fa454055bca5b4816f65a96b23c82eeabccb87697e376642279c&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
         </section>
-    </main>
+    </main> 
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
@@ -495,6 +549,7 @@
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>

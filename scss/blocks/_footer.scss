@@ -3,9 +3,20 @@
   padding: 48px 0;
   background-color: $color-bokara-grey;
 
+  @include vp-767 {
+    padding: 20px;
+  }
+
   &__content {
     display: grid;
     grid-template-columns: 1fr 253px 1fr;
+
+    @include vp-767 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
   }
 
   &__logo-link {
@@ -13,6 +24,16 @@
     align-items: center;
     margin: 0 50px 0 0;
     color: $color-white;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-white-50;
+    }
+
+    @include vp-767 {
+      margin: 0;
+      order: 3;
+    }
   }
 
   &__logo-icon {
@@ -28,6 +49,10 @@
     flex-direction: column;
     align-items: center;
     gap: 3px;
+
+    @include vp-767 {
+      order: 1;
+    }
   }
 
   &__inner-phone {
@@ -35,6 +60,11 @@
     font-size: 32px;
     line-height: 36px;
     color: $color-white;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-white-50;
+    }
   }
 
   &__inner-time {
@@ -52,6 +82,11 @@
     align-items: center;
     justify-content: end;
     gap: 20px;
+
+    @include vp-767 {
+      gap: 30px;
+      order: 2;
+    }
   }
 
   &__user-link {
@@ -64,6 +99,11 @@
     border-radius: 50%;
     border: 1px solid $color-white;
     color: $color-white;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-white-50;
+    }
 
     &--avito {
       padding: 10px 4px;

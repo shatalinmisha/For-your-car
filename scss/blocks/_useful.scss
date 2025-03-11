@@ -2,12 +2,23 @@
   width: 90vw;
   margin: 0 auto 80px;
 
+  @include vp-767 {
+    width: 100%;
+    margin: 0 0 60px;
+  }
+
   &__title {
-    margin: 0 0 20px;
+    margin: 0 0 40px;
     font-family: $ff-Parat;
     font-weight: 400;
     font-size: 48px;
     line-height: 56px;
+
+    @include vp-767 {
+      text-align: center;
+      font-size: 36px;
+      line-height: 30px;
+    }
   }
 
   &__list {
@@ -18,6 +29,13 @@
     list-style-type: none;
     column-width: 250px;
     column-rule: 1px groove $color-black;
+    column-gap: 2em;
+
+    @include vp-767 {
+      column-rule: none;
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -27,12 +45,25 @@
   }
 
   &__subtitle {
-    padding: 0 0 0 20px;
-    margin: 10px 0 10px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0;
+    margin: 0 0 5px;
+
   }
 
   &__text {
-    margin: 0;
+    text-align: justify;
+    text-indent: 25px;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 0 20px;
     overflow-wrap: break-word;
+
+    @include vp-767 {
+      font-size: 16px;
+    line-height: 22px;
+    }
   }
 }

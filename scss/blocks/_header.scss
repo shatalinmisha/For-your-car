@@ -1,242 +1,168 @@
 .header {
-    border-bottom: 1px solid $color-bokara-grey;
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-    background-color: $color-white;
-  
-    @include vp-1023 {
-      padding: 18px 0 17px;
-    }
-  
-    @include vp-767 {
-      padding: 14px 0 13px;
-    }
-  
-    &--burger-menu {
-      .header__burger-icon {
-        display: none;
-      }
-  
-      .header__burger-close-icon {
-        display: block;
-      }
-  
-      .main-nav {
-        @include vp-1023 {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          position: absolute;
-          top: 72px;
-          left: 50%;
-          transform: translateX(-50%);
-          z-index: 10;
-          padding: 40px 0;
-          width: 100%;
-          background-color: $color-hint-of-red;
-        }
-  
-          @include vp-767 {
-            top: 60px;
-            padding: 80px 0 40px;
-          }
-  
-        &::before {
-          @include vp-1023 {
-            content: "";
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1;
-            width: 500px;
-            height: 149px;
-            background-image: url("/images/logo-fon-burger-tab.png");
-            background-repeat: no-repeat;
-          }
-  
-            @include vp-767 {
-              width: 340px;
-              height: 100px;
-              top: 36%;
-              background-image: url("/images/logo-fon-burger-mb.png");
-            }
-        }
-      }
-  
-      .main-nav__list {
-        @include vp-1023 {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          gap: 29px;
-          margin: 0 0 68px;
-          z-index: 10;
-        }
-  
-          @include vp-767 {
-            margin: 0 0 92px;
-          }
-      }
-  
-      .main-nav__link {
-        @include vp-1023 {
-          font-size: 24px;
-          font-weight: 400;
-          line-height: 28px;
-        }
-  
-        @include vp-767 {
-          font-size: 20px;
-          font-weight: 400;
-          line-height: 24px;
-        }
-      }
-  
-      .main-nav__burger-phone-link {
-        @include vp-1023 {
-          display: flex;
-          align-items: center;
-        }
-      }
-    }
-  
-    &__content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      margin: 0;
-      padding: 15px 0;
-    }
-  
-    &__logo-link {
-      align-items: center;
-      display: flex;
-      margin: 0 50px 0 0;
-  
-      @include vp-1023 {
-        margin: 0;
-      }
-    }
-  
-    &__logo-icon {
-      align-self: flex-start;
-      border-radius: 6px;
-      flex-shrink: 0;
-      height: 42px;
-      width: 121px;
-  
-      @include vp-1023 {
-        height: 36px;
-        width: 100px;
-      }
-  
-      @include vp-767 {
-        height: 32px;
-        width: 90px;
-      }
-    }
-  
-    &__user-list {
-      margin: 0;
-      padding: 0 20px;
-      list-style-type: none;
-      display: flex;
-      gap: 30px;
-  
-      @include vp-767 {
-        gap: 5px 15px;
-      }
-    }
-  
-    &__user-link {
-      align-items: center;
-      background-color: transparent;
-      border: none;
-      color: $color-bokara-grey;
-      cursor: pointer;
-      display: flex;
-      flex-shrink: 0;
-      height: 24px;
-      justify-content: center;
-      padding: 0;
-      position: relative;
-      width: 24px;
-      
-  
-      @include vp-1023 {
-        height: 20px;
-        width: 20px;
-      }
-  
-      &:last-child {
-        @include vp-1023 {
-          display: none;
-        }
-      }
-  
-      &:hover,
-      &:focus-visible {
-        color: $color-bokara-grey-40;
-      }
-  
-      &:active {
-        .header__user-count {
-          display: flex;
-          color: $color-bokara-grey;
-        }
-      }
+  border-bottom: 1px solid $color-bokara-grey;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: $color-white;
 
-      &--avito {
-        width: 40px;
-        height: 24px;
-      }
-    }
-  
-    &__user-icon {
-      height: 24px;
-      pointer-events: none;
-      width: 24px;
-  
-      @include vp-1023 {
-        height: 20px;
-        width: 20px;
-      }
-
-      &--avito {
-        width: 40px;
-        height: 24px;
-      }
-    }
-  
-    &__burger {
-      color: $color-bokara-grey;
-      background-color: transparent;
-      border: none;
-      display: none;
-      height: 32px;
-      left: 50%;
-      padding: 0;
-      position: absolute;
-      top: 50%;
-      transform: translate3d(-50%, -50%, 0);
-      width: 32px;
-      cursor: pointer;
-  
-      &:hover,
-      &:focus {
-        color: $color-white;
-      }
-  
-      @include vp-1023 {
-        display: block;
-      }
-    }
-  
-    &__burger-close-icon {
-      display: none;
+  &--open {
+    .main-nav-burger {
+      display: flex;
     }
   }
-  
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0;
+    padding: 15px 0;
+  }
+
+  &__logo-link {
+    align-items: center;
+    display: flex;
+    margin: 0 50px 0 0;
+  }
+
+  &__logo-icon {
+    align-self: flex-start;
+    border-radius: 6px;
+    flex-shrink: 0;
+    height: 42px;
+    width: 121px;
+  }
+
+  &__user-list {
+    margin: 0;
+    padding: 0 20px;
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+
+   @include vp-1023 {
+    display: none;
+   }
+  }
+
+  &__user-link {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: $color-bokara-grey;
+    cursor: pointer;
+    display: flex;
+    flex-shrink: 0;
+    height: 24px;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    width: 24px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: $color-bokara-grey-40;
+  }
+
+  &--avito {
+    width: 40px;
+    height: 24px;
+  }
+
+  &__user-icon {
+    height: 24px;
+    pointer-events: none;
+    width: 24px;
+
+    @include vp-1023 {
+      height: 20px;
+      width: 20px;
+    }
+
+    &--avito {
+      width: 40px;
+      height: 24px;
+    }
+  }
+
+  &__burger {
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: transform 0.5s ease-in;
+    display: none;
+
+    @include vp-1023 {
+      display: flex;
+    }
+
+    .header--open & {
+      z-index: 10;
+    }
+
+    &:hover,
+    &:focus-visible {
+      animation: rotateIn 2s linear alternate infinite;
+
+      .header--open & {
+        animation: none;
+      }
+    }
+
+    .header--open & {
+      &-menu {
+        background-color: transparent;
+
+        &::after {
+          top: 0;
+          transform: translate(-50%, 0) rotate(45deg);
+          transition: top ease-in 0.3s, transform ease-in 0.3s 0.3s;
+        }
+
+        &::before {
+          top: 0;
+          transform: translate(-50%, 0) rotate(-45deg);
+          transition: top ease-in 0.3s, transform ease-in 0.3s 0.3s;
+        }
+      }
+    }
+
+    &-menu {
+      position: relative;
+      width: 30px;
+      height: 2px;
+      background-color: $color-black;
+      transition: background-color 0s 0.3s;
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 30px;
+        height: 2px;
+        background-color: $color-black;
+      }
+
+      &::before {
+        transition: top ease-in 0.3s 0.3s, transform ease-in 0.3s;
+      }
+
+      &::after {
+        top: -8px;
+        transition: top ease-in 0.3s 0.3s, transform ease-in 0.3s;
+      }
+    }
+  }
+}

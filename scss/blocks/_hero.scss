@@ -22,6 +22,37 @@
     padding: 20px 0;
   }
 
+  &__inner {
+    width: 500px;
+    height: 250px;
+    background-color: $color-bokara-grey;
+    color: $color-white;
+    padding: 30px 15px;
+    margin: 0 0 50px;
+    border-radius: 20px;
+
+    @include vp-767 {
+      width: 80vw;
+      height: auto;
+      margin: 40px auto 40px;
+    }
+  }
+
+  &__video-mob {
+    display: none;
+
+    @include vp-767 {
+      width: 80vw;
+      display: block;
+      margin: 0 auto 50px;
+      object-fit: cover;
+      border-radius: 18px;
+      border: 1px solid $color-bokara-grey;
+      box-shadow: 2px 33px 27px 18px rgba(30, 32, 34, 0.47);
+      
+    }
+  }
+
   &__title {
     max-width: 470px;
     margin: 0 0 40px;
@@ -32,6 +63,14 @@
     line-height: 70px;
     text-transform: uppercase;
     border-bottom: 1px solid $color-white;
+
+    @include vp-767 {
+      padding: 0 0 5px;
+      margin: 0 0 20px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   &__title-text {
@@ -43,16 +82,13 @@
     line-height: 30px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-  }
 
-  &__inner {
-    width: 500px;
-    height: 250px;
-    background-color: $color-bokara-grey;
-    color: $color-white;
-    padding: 30px 15px;
-    margin: 0 0 50px;
-    border-radius: 20px;
+    @include vp-767 {
+      margin: 0 0 20px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+    }
   }
 
   &__info {
@@ -68,6 +104,15 @@
     background-color: $color-white;
     overflow: hidden;
     box-shadow: -1px 11px 54px 15px rgba(0, 0, 0, 0.2) inset;
+
+    @media (max-width: 1260px) {
+      width: 500px;
+      height: 200px;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
   }
 
   &__info-img {
@@ -75,6 +120,12 @@
     left: 20px;
     bottom: -26px;
     transform: rotate(4deg);
+
+    @media (max-width: 1260px) {
+      width: 200px;
+      height: 200px;
+      left: 11px;
+    }
   }
 
   &__description {
@@ -86,6 +137,12 @@
     font-weight: 400;
     letter-spacing: 0.06em;
     margin: 0 0 5px;
+
+    @media (max-width: 1260px) {
+      width: 370px;
+      font-size: 14px;
+      line-height: 33px;
+    }
   }
 
   &__signature {
@@ -113,12 +170,22 @@
     user-select: none;
     cursor: pointer;
     margin: 0 0 50px;
+
+    @include vp-767 {
+      width: 100%;
+      font-size: 14px;
+      line-height: 30px;
+    }
   }
 
   &__list {
     margin: 0;
     padding: 0;
     list-style-type: none;
+
+    @include vp-1023 {
+      display: none;
+    }
   }
 
   &__item {
@@ -130,6 +197,11 @@
     overflow: hidden;
     border-radius: 20px;
     border: 2px solid $color-phone-burger;
+
+    @media (max-width: 1260px) {
+      width: 280px;
+      height: 280px;
+    }
   }
 
   &__item-one {
@@ -138,6 +210,11 @@
     top: 300px;
     left: 0;
     z-index: 2;
+
+    @media (max-width: 1260px) {
+      width: 240px;
+      height: 240px;
+    }
   }
 
   &__item-two {
@@ -145,11 +222,15 @@
     height: 200px;
     top: 29px;
     left: 348px;
+
+    @media (max-width: 1260px) {
+      width: 160px;
+      height: 160px;
+      left: 320px;
+    }
   }
 
   &__item-thre {
-    width: 320px;
-    height: 320px;
     top: 69px;
     left: 69px;
     overflow: hidden;
@@ -161,6 +242,11 @@
     height: 180px;
     top: 613px;
     left: 80px;
+
+    @media (max-width: 1260px) {
+      width: 120px;
+      height: 120px;
+    }
   }
 
   &__item--five {
@@ -168,6 +254,13 @@
     height: 240px;
     top: 516px;
     left: 242px;
+
+    @media (max-width: 1260px) {
+      width: 200px;
+      height: 200px;
+      top: 500px;
+      left: 188px;
+    }
   }
 
   &__video {

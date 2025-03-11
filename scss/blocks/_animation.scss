@@ -1,0 +1,305 @@
+@keyframes header-bg {
+    0% {
+      opacity: 0;
+    }
+  
+    5%,
+    15% {
+      opacity: 1;
+    }
+  
+    20% {
+      opacity: 0;
+    }
+  
+    25%,
+    35% {
+      opacity: 1;
+    }
+  
+    40% {
+      opacity: 0;
+    }
+  
+    45%,
+    55% {
+      opacity: 1;
+    }
+  
+    60% {
+      opacity: 0;
+    }
+  
+    65%,
+    75% {
+      opacity: 1;
+    }
+  
+    80% {
+      opacity: 0;
+    }
+  
+    85%,
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes black-cube-1 {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes anim-block {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes devil-img {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes image-big {
+    0%,
+    100% {
+      transform: scale(1) translate(0, 0) rotate(0deg);
+    }
+  
+    20%,
+    30%,
+    40%,
+    50%,
+    60%,
+    70%,
+    80% {
+      transform: scale(1.4) translate(0px, 0px) rotate(0deg);
+    }
+  
+    25%,
+    45%,
+    65%,
+    85% {
+      transform: scale(1.4) translate(-5px, -5px) rotate(-5deg);
+    }
+  
+    35%,
+    55%,
+    75% {
+      transform: scale(1.4) translate(5px, 5px) rotate(5deg);
+    }
+  
+    90% {
+      transform: scale(1.3) translate(0px, 0px) rotate(0deg);
+    }
+  }
+  
+  @keyframes devil-move {
+    0% {
+      transform: translate(0, 0) rotate(0) scale(1);
+    }
+  
+    10% {
+      transform: translate(100px, 50px) rotate(-10deg) scale(1.02);
+    }
+  
+    20% {
+      transform: translate(200px, 0px) rotate(5deg) scale(0.9);
+    }
+  
+    30% {
+      transform: translate(250px, -80px) rotate(-20deg) scale(1.1);
+    }
+  
+    40% {
+      transform: translate(300px, -150px) rotate(0deg) scale(1);
+    }
+  
+    50% {
+      transform: translate(320px, -80px) rotate(15deg) scale(1.2);
+    }
+  
+    60% {
+      transform: translate(250px, -20px) rotate(0deg) scale(0.9);
+    }
+  
+    70% {
+      transform: translate(180px, 20px) rotate(-5deg) scale(1);
+    }
+  
+    80% {
+      transform: translate(100px, 50px) rotate(0deg) scale(1);
+    }
+  
+    90% {
+      transform: translate(50px, 30px) rotate(4deg) scale(1);
+    }
+  
+    100% {
+      transform: translate(0, 0) rotate(0) scale(1);
+    }
+  }
+  
+  @keyframes title {
+    0% {
+      transform: translateY(100%);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes rotateHead {
+    0% {
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(15deg);
+    }
+  }
+  
+  @keyframes jump {
+    0% {
+      transform: translate(0);
+    }
+    30% {
+      transform: translate(169%, 318%);
+    }
+    45% {
+      transform: translate(158%, 75%);
+    }
+    70% {
+      transform: translate(66%, 203%);
+    }
+    100% {
+      transform: scale(1.4) translate(84%, 145%);
+    }
+  }
+  
+  @keyframes fadeOutRight {
+    0% {
+      opacity: 0;
+    }
+    60% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes rotateIn {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.4);
+    }
+    100% {
+      transform: scale(0.7);
+    }
+  }
+  
+  @keyframes change-bg {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(2, 21);
+    }
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes slideOutDown {
+    0% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(0, 30px);
+    }
+  }
+  
+  @keyframes rollIn {
+    0% {
+      transform: rotate(0) translate(-300px, -100px);
+    }
+    100% {
+      transform: rotate(360deg) translate(109px, 197px);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+      top: 52%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  @keyframes fadeInUpTwo {
+    0% {
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  

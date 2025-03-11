@@ -6,5 +6,9 @@
 
   &--lateral {
     padding: 0 70px;
+
+    @include vp-767 {
+      padding: 0 20px;
+    }
   }
 }
